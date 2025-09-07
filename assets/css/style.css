@@ -317,3 +317,24 @@ footer a:hover {
   width: 100%;
   font-size: 1rem;
 }
+/* ===== Responsive Header Fix ===== */
+header .logo h1 {
+  font-size: 1.5rem; /* default */
+  white-space: nowrap; /* prevents breaking into two lines if possible */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap; /* allow elements to stack nicely */
+    justify-content: space-between;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;   /* smaller text for mobile */
+  }
+
+  header .logo img {
+    height: 35px;  /* slightly smaller logo */
+    width: 35px;
+  }
+}
